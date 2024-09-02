@@ -17,6 +17,11 @@ function setTagColor(tag) {
   }
 }
 
+const handleClick = (url) => {
+//TODO: Finish this button
+//TODO: add the on focus
+};
+
 export default function Tile() {
   return (
     <>
@@ -37,7 +42,7 @@ export default function Tile() {
           <div className={`${styles.onFlip} ${styles.flipBack}`}>
             <h3>{project.title}</h3>
             <p>{project.description}</p>
-            <button onClick={project.url}>View source code</button>
+            <button onClick={handleClick(project.url)}>View source code</button>
           </div>
         </div>
         </div>

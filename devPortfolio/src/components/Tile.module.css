@@ -60,6 +60,7 @@
 .onFlip {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 p {
@@ -107,8 +108,12 @@ h3 {
 }
 
 .flipBack {
-  background-color: #555;
+  background-color: #222020;
   color: white;
   border-radius: 15px 15px 0 0;
   transform: rotateY(180deg);
+}
+
+button {
+    background-color: transparent;
 }
