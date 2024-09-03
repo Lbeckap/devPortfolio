@@ -5,13 +5,17 @@
   justify-content: center;
 }
 
+.container:hover .flipBox {
+    opacity: .2; 
+}
+
+.container .flipBox:hover {
+    opacity: 1;
+}
+
 .tile {
   filter: drop-shadow(1px 4px 4px #5a5a5a);
   line-height: 0;
-}
-
-.tile:hover:only-child {
-  opacity: 10%;
 }
 
 .tileImg {
@@ -66,17 +70,24 @@
 p {
   line-height: 1.2;
   font-size: small;
+  padding: 0 5px;
 }
 
 h3 {
   margin: 13px 0 2px 0;
 }
 
+a {
+    margin-bottom: 5px;
+}
+
 .flipBox {
   background-color: transparent;
-  width: 250px;
-  height: 24.5vh;
+  width: 252px;
+  height: 169px;
+  border-radius: 16px 16px 0 0;
   perspective: 1000px;
+  
 }
 
 .flipInner {
@@ -102,7 +113,7 @@ h3 {
 }
 
 .flipFront {
-  background-color: #bbbbbb00;
+  background-color: #302727;
   color: black;
   border-radius: 15px 15px 0 0;
 }

@@ -3,9 +3,9 @@ const testDataProjects = [
     id: 1,
     title: 'This Dev Portfolio',
     description: 'Driven by a desire to creatively display my work, welcome to my first independent React project.',
-    url: 'www.google.com',
+    url: '#',
     img: 'https://img.freepik.com/free-photo/still-life-graphic-design-office_23-2151345410.jpg',
-    tags: ['css', 'js', 'java', 'html', 'react'],
+    tags: ['css', 'js', 'html', 'react'],
   },
   {
     id: 2,

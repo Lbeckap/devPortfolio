@@ -17,36 +17,33 @@ function setTagColor(tag) {
   }
 }
 
-const handleClick = (url) => {
-//TODO: Finish this button
-//TODO: add the on focus
-};
-
 export default function Tile() {
   return (
     <>
-    <div className={styles.container}>
-      {data.map((project, id) => (
-        <div className={styles.flipBox} key={id}>
-        <div className={styles.flipInner}>
-          <div className={`${styles.tile} ${styles.flipFront}`}>
-            <img src={project.img} className={styles.tileImg}></img>
-            <div className={styles.tagBar}>
-              {project.tags.map((tag) => (
-                <div
-                  className={`${styles.inlineColorTags} ${setTagColor(tag)}`}
-                ></div>
-              ))}
+      <div className={styles.container}>
+        {data.map((project, id) => (
+          <div className={styles.flipBox} key={id}>
+            <div className={styles.flipInner}>
+              <div className={`${styles.tile} ${styles.flipFront}`}>
+                <img src={project.img} className={styles.tileImg}></img>
+                <div className={styles.tagBar}>
+                  {project.tags.map((tag) => (
+                    <div
+                      className={`${styles.inlineColorTags} ${setTagColor(
+                        tag
+                      )}`}
+                    ></div>
+                  ))}
+                </div>
+              </div>
+              <div className={`${styles.onFlip} ${styles.flipBack}`}>
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+                <a href={project.url}>View source code</a>
+              </div>
             </div>
           </div>
-          <div className={`${styles.onFlip} ${styles.flipBack}`}>
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <button onClick={handleClick(project.url)}>View source code</button>
-          </div>
-        </div>
-        </div>
-      ))}
+        ))}
       </div>
     </>
   );
