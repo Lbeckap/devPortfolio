@@ -3,6 +3,14 @@
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  border-color: rgb(14, 203, 255);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 20px 0 30px 0;
+  max-width: 90%;
+  background-image: radial-gradient(rgba(91, 91, 91, 0.299), rgba(29, 29, 29, 0.312));
 }
 
 .container:hover .flipBox {

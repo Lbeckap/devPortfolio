@@ -1,0 +1,21 @@
+.container {
+    background-image: linear-gradient(rgba(81, 80, 80, 0.427), rgba(45, 45, 45, 0.265));
+    color: rgb(14, 203, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+.headerTitle {
+    font-size: xx-large;
+    padding-left: 20px;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.nav {
+    display: flex;
+    column-gap: 20px;
+    padding-right: 20px;
+}

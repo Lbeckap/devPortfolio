@@ -17,6 +17,8 @@ function setTagColor(tag) {
   }
 }
 
+//TODO Change container color based on if filtering by a tag. Make it a gradient with each tag.
+
 export default function Tile() {
   return (
     <>
