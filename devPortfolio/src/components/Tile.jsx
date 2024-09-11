@@ -1,29 +1,33 @@
+import { useState } from 'react';
 import styles from './Tile.module.css';
-import data from './projectsData.jsx';
-
-function setTagColor(tag) {
-  if (tag === 'css') {
-    return styles.inlineColorTags_css;
-  } else if (tag === 'js') {
-    return styles.inlineColorTags_js;
-  } else if (tag === 'html') {
-    return styles.inlineColorTags_html;
-  } else if (tag === 'react') {
-    return styles.inlineColorTags_react;
-  } else if (tag === 'java') {
-    return styles.inlineColorTags_java;
-  } else {
-    return styles.inlineColorTags_other;
-  }
-}
+// import data from './projectsData.jsx';
 
 //TODO Change container color based on if filtering by a tag. Make it a gradient with each tag.
 
-export default function Tile() {
+export default function Tile({projectList}) {
+
+
+
+  function setTagColor(tag) {
+    if (tag === 'css') {
+      return styles.inlineColorTags_css;
+    } else if (tag === 'js') {
+      return styles.inlineColorTags_js;
+    } else if (tag === 'html') {
+      return styles.inlineColorTags_html;
+    } else if (tag === 'react') {
+      return styles.inlineColorTags_react;
+    } else if (tag === 'java') {
+      return styles.inlineColorTags_java;
+    } else {
+      return styles.inlineColorTags_other;
+    }
+  }
+  
   return (
     <>
       <div className={styles.container}>
-        {data.map((project, id) => (
+        {projectList.map((project, id) => (
           <div className={styles.flipBox} key={id}>
             <div className={styles.flipInner}>
               <div className={`${styles.tile} ${styles.flipFront}`}>

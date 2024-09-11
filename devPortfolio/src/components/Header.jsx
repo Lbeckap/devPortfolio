@@ -6,7 +6,7 @@ export default function Header() {
             <div className={styles.container}>
                 <div>
                     <img></img>
-                    <p className={styles.headerTitle}>Lori Phillips .</p>
+                    <p className={styles.headerTitle}>Lori Phillips.</p>
                 </div>
                 <nav className={styles.nav}>
                     <a>Projects</a>
